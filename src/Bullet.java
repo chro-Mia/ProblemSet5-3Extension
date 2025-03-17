@@ -2,16 +2,18 @@ import processing.core.PApplet;
 
 public class Bullet extends Floater{
 
-    public Bullet(PApplet applet, SpaceShip ship) {
+    public Bullet(PApplet applet, SpaceShip s) {
         super(applet);
-        this.setPos(ship.getX(), ship.getY());
-        this.setV(ship.getVX() * 2, ship.getVY() * 2);
-        this.rotate(ship.getDirection());
+
+        this.setPos(s.getX(), s.getY());
+        this.rotate(s.getDirection());
+        this.setV(s.getVX() * 3, s.getVY() * 3);
     }
 
     public void show(){
-        applet.fill(applet.color(255,255,0));
-        applet.stroke(applet.color(255,255,0));
+        int color = applet.color(255,255,0);
+        applet.fill(color);
+        applet.stroke(color);
         applet.ellipse((float)getX(),(float)getY(),10,10);
     }
 
