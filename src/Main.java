@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+import processing.core.PApplet;
 
-public class Main {
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        PApplet.main("AsteroidsGame");
+    }
 }
