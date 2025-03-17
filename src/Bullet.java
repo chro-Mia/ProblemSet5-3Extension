@@ -19,6 +19,6 @@ public class Bullet extends Floater{
 
     public void move(){
         setPos(getX() + getVX(), getY() + getVY());
-        accelerateForward(2);
+        accelerateForward(5);
     }
 }
